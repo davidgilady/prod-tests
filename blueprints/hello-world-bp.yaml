@@ -6,8 +6,8 @@ inputs:
 
 outputs:
   hello-world:
-    value: '{{ .grains.hello-world.outputs.hello_world }}'
-  
+    value: "{{ .grains.hello-world.outputs.hello_world }}"
+
 grains:
   hello-world:
     kind: terraform
@@ -25,7 +25,7 @@ grains:
       #     source: hashicorp/aws
       #     version: ~>5.20.0
       #     attributes:
-      #       alias: uw2          
+      #       alias: uw2
       #       region: us-west-2
       #       assume_role:
       #         role_arn: arn:aws:iam::046086677675:role/some-other-role
@@ -33,10 +33,10 @@ grains:
         store: bps
         path: terraform/hello-world
       agent:
-        name: '{{ .inputs.agent }}'
-      inputs: 
-      - vido: 'viddd'
+        name: "{{ .inputs.agent }}"
+      inputs:
+        - name: "MOOOOOTTTTTTTTTTTTIIIIIIIIIIIIIIIIIII"
       env-vars: []
       outputs:
-      - hello_world
+        - hello_world
     tf-version: 1.5.5
